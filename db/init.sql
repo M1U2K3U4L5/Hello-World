@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS news_items (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  source VARCHAR(100) NOT NULL,
+  url TEXT NOT NULL,
+  sentiment VARCHAR(20) NOT NULL,
+  published_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS portfolio_snapshots (
+  id SERIAL PRIMARY KEY,
+  capital NUMERIC NOT NULL,
+  risk_profile VARCHAR(20) NOT NULL,
+  allocation_json TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
