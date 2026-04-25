@@ -122,10 +122,6 @@ ALLOWED_ORIGINS=http://localhost:3000
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 ```
 
-> If you run through `docker compose`, frontend server-side requests should use the backend service hostname:
->
-> `NEXT_PUBLIC_API_BASE_URL=http://backend:8000`
-
 ---
 
 ## Notes
